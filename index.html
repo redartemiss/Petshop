@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js" async></script>
+    <title>Huellitas </title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="" id="logo" width="160px">
+        </div>
+        <h1>Tienda de mascotas</h1>
+        <nav>
+            <ul class="menu-horizontal">
+                <li><a href="#">Tienda</a></li>
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="menu-vertical">
+                        <li><a href="pages/perros.html">Perros</a></li>
+                        <li><a href="pages/gatos.html">Gatos</a></li>
+                    </ul>
+                <li><a href="pages/contactanos.html">Contáctanos </a></li>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="parrafo">
+        <div id="parrafo">
+            <p id="presentacion">
+                Una pet shop en línea: aquí, encontrarás todas tus marcas favoritas para tus adorables compañeros peludos,
+                además de una amplia gama de productos para cuidar de tus compañeros perrunos y gatunos.
+                Desde alimentos concentrados hasta accesorios, productos de higiene y
+                belleza, tenemos todo lo que necesitas. Además, te ofrecemos la comodidad de recibir nuestros
+                productos en la puerta de tu casa gracias a nuestro eficiente servicio de entrega.
+            </p>
+        </div>
+    </section>
+    <section class="titulo-p1">
+        <h2 id="titulo-p1">
+            Productos más vendidos
+        </h2>
+    </section>
+    
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item"category="alimentos">
+                <span class="titulo-item">FILPO 30 KILOS</span>
+                <img src="../img/perros/alimento/1.jpg" alt="" class="img-item">
+                <span class="precio-item">$114.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item"category="alimentos">
+                <span class="titulo-item">CHUNKY ADULTO 4 KILOS</span>
+                <img src="../img/perros/alimento/7.jpg" alt="" class="img-item">
+                <span class="precio-item">$32.500</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item"category="jugeteria">
+                <span class="titulo-item">POLLO CHILLON GRANDE</span>
+                <img src="../img/perros/juguetes/2.jpg" alt="" class="img-item">
+                <span class="precio-item">$5.500</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item"category="jugeteria">
+                <span class="titulo-item">HUESO CITRICO</span>
+                <img src="../img/perros/juguetes/4.jpg" alt="" class="img-item">
+                <span class="precio-item">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item"category="jugeteria">
+                <span class="titulo-item">RASCADOR PARA GATO</span>
+                <img src="../img/gatos/juguetes/4.jpg" alt="" class="img-item">
+                <span class="precio-item">$29.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item"category="accesorios">
+                <span class="titulo-item">COLCHONETA EXTRA </span>
+                <img src="../img/gatos/accesorios/6.jpg" alt="" class="img-item">
+                <span class="precio-item">$45.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item"category="accesorios">
+                <span class="titulo-item">MORRAL CARGADOR PARA GATOS CON DOMO </span>
+                <img src="../img/gatos/accesorios/7.jpg" alt="" class="img-item">
+                <span class="precio-item">$100.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item"category="accesorios">
+                <span class="titulo-item">GUACAL EN TELA PEQUEÑO </span>
+                <img src="../img/gatos/accesorios/8.jpg" alt="" class="img-item">
+                <span class="precio-item">$25.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+    <section class="boton-mas">
+        <nav>
+            <ul id="boton-mas">
+                <li><a href="pages/perros.html">Ver más productos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <footer class="footer">
+        <div>
+            <ul class="footerbotones">
+                <li><a href="https://www.google.com/maps/d/u/0/viewer?mid=1avLq2SjfBITa2qNQ2pdB-0rjldI&hl=es&ll=4.651711000000026%2C-74.098663&z=17"><b>Ubicación</a></li>
+                <li><a href="https://w.app/HuellitasCOL"><b>WhatApp</b></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
