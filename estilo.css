@@ -8,8 +8,10 @@ header{
     background: url(img/banner2.jpg);
     background-size: cover;
     background-position:center;
-    height: 600px;
+    height: 600px;  
+
 }
+
 header h1{
     text-align: center;
     font-size: 15px;
@@ -19,7 +21,9 @@ header h1{
     position: absolute;
     text-align: center;
     top: 0%;
-    left: 45%;
+    left: 0%;
+    background-color: hwb(209 4% 84% / 0.064);
+    width: 2000px;
 }
 nav{
     max-width: 900px;
@@ -28,6 +32,7 @@ nav{
     top: -22%;
     font-size: 20px;
     margin-top: 50px;
+
 }
 .menu-horizontal{
     list-style: none;
@@ -129,6 +134,21 @@ nav{
     justify-content: space-between;
     
 }
+.titulo-ubi{
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#titulo-ubi{
+    position: absolute;
+    font-size: 25px;
+    color: #ee8f01;
+    top: 118%;
+
+}
+
 #titulo-p1{
     position: absolute;
     font-size: 25px;
@@ -327,13 +347,24 @@ nav{
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
 }
+
+#ubicacion{
+    display: flex;
+    justify-content: center;
+    background-color:hsla(191, 41%, 84%, 0.231);
+    padding: 10px;
+
+  }
+#ubi{
+    align-self: center;
+  }
 #contactame{
     padding: 50px;
 
 
 }
 form{
-    width:300px;
+    width:1200px;
 	padding:18px;
 	border-radius:10px;
 	margin:auto;
@@ -349,7 +380,7 @@ form label{
 
 form input[type="text"],
 form input[type="email"]{
-	width:180px;
+	width:40%;
 	padding:3px 10px;
 	border:1px solid #f6f6f6;
 	border-radius:3px;
@@ -359,14 +390,18 @@ form input[type="email"]{
 }
 
 form input[type="submit"]{
-	width:100%;
-	padding:8px 16px;
+	width:40%;
+	padding:9px 16px;
 	margin-top:32px;
 	border:1px solid #96bbc4;
 	border-radius:5px;
 	display:block;
 	color:#fff;
 	background-color:#00BFEC;
+    font-size: 100%;
+    font-weight: bold;
+    position: relative;
+    left: 30%;
 } 
 
 form input[type="submit"]:hover{
@@ -375,7 +410,7 @@ form input[type="submit"]:hover{
 
 textarea{
 	width:100%;
-	height:100px;
+	height:120px;
 	border:1px solid #f6f6f6;
 	border-radius:3px;
 	background-color:#f6f6f6;			
@@ -384,38 +419,68 @@ textarea{
 	resize:none;
 	display:block;
 }
-.footer{
-    display: block;
+/*:::::Pie de Pagina*/
+.pie-pagina{
     width: 100%;
     background-color: #00BFEC;
-
 }
-.footerbotones{
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
     display: flex;
-    list-style: none;
+    justify-content: center;
     align-items: center;
-    list-style: none;
-    text-decoration: none;
-    justify-content: space-around;
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 18px;
 }
-.footerbotones li a{
-    text-decoration: none;
-    color: #ffffff;
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
 }
-
-/* SECCION RESPONSIVE */
-@media screen and (max-width: 850px) {
-    .contenedor {
-      display: block;
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #00BFEC;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
     }
-    .contenedor-items{
-        width: 100% !important;
-    }
-    .carrito{
-        width: 100%;
-    }
-  }
-
+}
