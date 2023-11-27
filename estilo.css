@@ -4,6 +4,7 @@
     padding:0;
     font-family: 'Open Sans';
 }
+
 header{
     background: url(img/banner2.jpg);
     background-size: cover;
@@ -483,4 +484,33 @@ textarea{
         grid-gap:30px;
         padding: 35px 0px;
     }
+    /* Estilos generales que aplican a todas las pantallas */
+
+/* Estilos para pantallas pequeñas (hasta 600px de ancho) */
+@media screen and (max-width: 600px) {
+    header {
+        height: 300px; /* Puedes ajustar la altura para pantallas más pequeñas */
+    }
+
+    header h1 {
+        font-size: 14px; /* Puedes ajustar el tamaño del texto para pantallas más pequeñas */
+    }
+}
+
+/* Estilos para pantallas medianas (de 601px a 900px de ancho) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    header {
+        height: 400px; /* Puedes ajustar la altura para pantallas medianas */
+    }
+
+    header h1 {
+        font-size: 18px; /* Puedes ajustar el tamaño del texto para pantallas medianas */
+    }
+
+}
+
+/* Estilos para pantallas grandes (más de 900px de ancho) */
+@media screen and (min-width: 901px) {
+}
+
 }
